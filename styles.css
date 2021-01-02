@@ -1,0 +1,70 @@
+html {
+   
+    box-sizing: border-box;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+}
+
+.titulo-logo{
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+h1 {
+    color: rgb(97, 70, 218)
+    
+};
+
+.photos { 
+    margin: 200px;
+}
+
+img {
+    height: 500px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+
+header { 
+    grid-area: header;
+    background-color: yellow;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:purple ;
+}
+header a{
+    color:rgb(12, 81, 241);
+    padding: 1rem;
+}
+
+.titulo {
+    color: rgba(57, 170, 123, 0.739);
+    text-align: center;
+}
+
+.inform {
+    color: rgba(57, 148, 34, 0.52);
+}

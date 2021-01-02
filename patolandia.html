@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Patolandia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' href='pato.ico' type='image/x-icon'/>
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="row">
+        <div class="titulo-logo">
+        <a href="index.html">Duckland</a> 
+        </div>
+        <div>
+          <a href="juegos.html">Games</a>
+          <a href="Ducks.html">Ducks</a>
+          <a href="acercade.html">About...</a>
+          
+        </div>
+      </header>
+
+      <main>
+        <h1 id="pato">Welcome to Patolandia!</h1>
+        
+      </main>
+
+      <footer>
+        Created by Prahlad Ezequiel Tkach - 2020
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    
+    <div class = "photos">
+    <img src="https://cdn.cienradios.com/wp-content/uploads/sites/2/2020/05/patos.jpg" />;
+    <img src="https://cdn.cienradios.com/wp-content/uploads/sites/4/2020/05/patos-1.jpg" />;
+    <img src="http://www.humoranimal.com/fotos/pato-en-bater-799.jpg" />;
+    <img src="https://i.pinimg.com/originals/3a/9e/f9/3a9ef9119a9eae671671b0cf671e96b6.jpg"/>;
+    </div>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5w4lpBBteQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cFVT_Qa5vrI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+    
+    
+    <script>
+      // var title = document.getElementById("pato");
+      // var nuevoTitle = prompt("Porfavor escriba la contraseña");
+      // while (nuevoTitle != "Tkach") {
+      //   nuevoTitle = prompt("Porfavor escriba la contraseña");
+      // }
+      
+      var posicion = 0;
+
+      var moverEncabezado = function () {
+        $("#pato").offset( { left: posicion });
+        posicion++;
+        if ( posicion > 300){
+            posicion = 0;
+        };
+      }
+
+     setInterval(moverEncabezado,10);
+
+    </script> 
+
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <h1 id = "encabezado">Animation  </h1>
+    <h2>by PrahaladEzequielTkach </h2>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script>
+         var posicion = 0;
+
+         var moverEncabezado = function () {
+             console.log (" pato",posicion)
+             $("#encabezado").offset( { left: posicion });
+             posicion++;
+             if ( posicion > 200){
+                 posicion = 0;
+             };
+            }
+            setInterval( moverEncabezado,30);
+            </script>
+</body>
+</html>
